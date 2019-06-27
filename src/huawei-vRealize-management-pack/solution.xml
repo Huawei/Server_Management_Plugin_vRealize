@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<solution>
+<managementPack>
+<name>HuaweieSightManagementPack</name>
+<version>1.2.3</version>
+<minimumProductVersion>6.0.0</minimumProductVersion>
+<localizations lang="en">
+<localization lang="en">
+<displayName>Huawei eSight Management Pack</displayName>
+<description>Huawei eSight Management Pack for VMware vRealize Operations</description>
+<vendor>Huawei</vendor>
+</localization>
+<localization lang="en-US">
+<displayName>Huawei eSight Management Pack</displayName>
+<description>Huawei eSight Management Pack for VMware vRealize Operations</description>
+<vendor>Huawei</vendor>
+</localization>
+</localizations>
+<eula>eula.txt</eula>
+<image>pak_icon.png</image>
+<platforms>
+<platform>Linux VA</platform>
+<platform>Linux Non-VA</platform>
+<platform>Windows</platform>
+</platforms>
+<adapters>
+<adapter>D:/ServerPlugin/vRealize/code/src/huawei-vRealize-plugin</adapter>
+</adapters>
+<scripts runScriptsOnAllNodes="false">
+<pre>preAdapters.py</pre>
+<post>postAdapters.py</post>
+<validation>validate.py</validation>
+</scripts>
+</managementPack>
+</solution>

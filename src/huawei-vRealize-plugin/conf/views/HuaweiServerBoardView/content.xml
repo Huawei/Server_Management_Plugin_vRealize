@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Content>
+    <Views>
+        <ViewDef id="ad0b588e-30e6-4459-aba6-3f121422148b">
+            <Title localizationKey="view.title"/>
+            <Description localizationKey="view.desc"/>
+            <SubjectType adapterKind="ESightAdapter" resourceKind="board" type="descendant"/>
+            <SubjectType adapterKind="ESightAdapter" resourceKind="board" type="self"/>
+            <Usage>dashboard</Usage>
+            <Usage>report</Usage>
+            <Usage>details</Usage>
+            <Usage>content</Usage>
+            <Controls>
+                <Control id="time-interval-selector_id_16" type="time-interval-selector" visible="false">
+                    <Property name="advancedTimeMode" value="false"/>
+                    <Property name="unit" value="DAYS"/>
+                    <Property name="count" value="7"/>
+                </Control>
+                <Control id="attributes-selector_id_17" type="attributes-selector" visible="false">
+                    <Property name="attributeInfos">
+                        <List>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="name"/>
+    <Property name="isStringAttribute" value="true"/>
+    <Property name="adapterKind" value="ESightAdapter"/>
+    <Property name="resourceKind" value="board"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="LAST"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="true"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="ipAddress"/>
+    <Property name="isStringAttribute" value="true"/>
+    <Property name="adapterKind" value="ESightAdapter"/>
+    <Property name="resourceKind" value="board"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="LAST"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="true"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="healthState"/>
+    <Property name="isStringAttribute" value="true"/>
+    <Property name="adapterKind" value="ESightAdapter"/>
+    <Property name="resourceKind" value="board"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="LAST"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="false"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="type"/>
+    <Property name="isStringAttribute" value="true"/>
+    <Property name="adapterKind" value="ESightAdapter"/>
+    <Property name="resourceKind" value="board"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="LAST"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="true"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="presentState"/>
+    <Property name="isStringAttribute" value="true"/>
+    <Property name="adapterKind" value="ESightAdapter"/>
+    <Property name="resourceKind" value="board"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="LAST"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="true"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="sn"/>
+    <Property name="isStringAttribute" value="true"/>
+    <Property name="adapterKind" value="ESightAdapter"/>
+    <Property name="resourceKind" value="board"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="LAST"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="true"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="partNumber"/>
+    <Property name="isStringAttribute" value="true"/>
+    <Property name="adapterKind" value="ESightAdapter"/>
+    <Property name="resourceKind" value="board"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="LAST"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="true"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="manufacture"/>
+    <Property name="isStringAttribute" value="true"/>
+    <Property name="adapterKind" value="ESightAdapter"/>
+    <Property name="resourceKind" value="board"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="LAST"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="true"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="manuTime"/>
+    <Property name="isStringAttribute" value="true"/>
+    <Property name="adapterKind" value="ESightAdapter"/>
+    <Property name="resourceKind" value="board"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="LAST"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="true"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="moId"/>
+    <Property name="isStringAttribute" value="true"/>
+    <Property name="adapterKind" value="ESightAdapter"/>
+    <Property name="resourceKind" value="board"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="LAST"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="true"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="uuid"/>
+    <Property name="isStringAttribute" value="true"/>
+    <Property name="adapterKind" value="ESightAdapter"/>
+    <Property name="resourceKind" value="board"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="LAST"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="true"/>
+</Value>
+                            </Item>
+                        </List>
+                    </Property>
+                </Control>
+                <Control id="pagination-control_id_18" type="pagination-control" visible="true">
+                    <Property name="start" value="0"/>
+                    <Property name="size" value="50"/>
+                </Control>
+            </Controls>
+            <DataProviders>
+                <DataProvider dataType="list-view" id="list-view_id_15"/>
+            </DataProviders>
+            <Presentation type="list"/>
+        </ViewDef>
+</Views>
+</Content>        

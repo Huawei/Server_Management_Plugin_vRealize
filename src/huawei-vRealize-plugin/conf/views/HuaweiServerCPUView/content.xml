@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Content>
+    <Views>
+         <ViewDef id="c1dc44ef-f248-4828-944d-5b3eea2e9dfa">
+            <Title localizationKey="view.title"/>
+            <Description localizationKey="view.desc"/>
+            <SubjectType adapterKind="ESightAdapter" resourceKind="cpu" type="descendant"/>
+            <SubjectType adapterKind="ESightAdapter" resourceKind="cpu" type="self"/>
+            <Usage>dashboard</Usage>
+            <Usage>report</Usage>
+            <Usage>details</Usage>
+            <Usage>content</Usage>
+            <Controls>
+                <Control id="time-interval-selector_id_24" type="time-interval-selector" visible="false">
+                    <Property name="advancedTimeMode" value="false"/>
+                    <Property name="unit" value="DAYS"/>
+                    <Property name="count" value="7"/>
+                </Control>
+                <Control id="attributes-selector_id_25" type="attributes-selector" visible="false">
+                    <Property name="attributeInfos">
+                        <List>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="name"/>
+    <Property name="isStringAttribute" value="true"/>
+    <Property name="adapterKind" value="ESightAdapter"/>
+    <Property name="resourceKind" value="cpu"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="LAST"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="true"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="healthState"/>
+    <Property name="isStringAttribute" value="true"/>
+    <Property name="adapterKind" value="ESightAdapter"/>
+    <Property name="resourceKind" value="cpu"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="LAST"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="false"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="presentState"/>
+    <Property name="isStringAttribute" value="true"/>
+    <Property name="adapterKind" value="ESightAdapter"/>
+    <Property name="resourceKind" value="cpu"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="LAST"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="true"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="frequency"/>
+    <Property name="isStringAttribute" value="true"/>
+    <Property name="adapterKind" value="ESightAdapter"/>
+    <Property name="resourceKind" value="cpu"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="LAST"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="true"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="model"/>
+    <Property name="isStringAttribute" value="true"/>
+    <Property name="adapterKind" value="ESightAdapter"/>
+    <Property name="resourceKind" value="cpu"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="LAST"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="true"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="manufacture"/>
+    <Property name="isStringAttribute" value="true"/>
+    <Property name="adapterKind" value="ESightAdapter"/>
+    <Property name="resourceKind" value="cpu"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="LAST"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="true"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="moId"/>
+    <Property name="isStringAttribute" value="true"/>
+    <Property name="adapterKind" value="ESightAdapter"/>
+    <Property name="resourceKind" value="cpu"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="LAST"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="true"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="uuid"/>
+    <Property name="isStringAttribute" value="true"/>
+    <Property name="adapterKind" value="ESightAdapter"/>
+    <Property name="resourceKind" value="cpu"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="LAST"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="true"/>
+</Value>
+                            </Item>
+                        </List>
+                    </Property>
+                </Control>
+                <Control id="pagination-control_id_26" type="pagination-control" visible="true">
+                    <Property name="start" value="0"/>
+                    <Property name="size" value="50"/>
+                </Control>
+            </Controls>
+            <DataProviders>
+                <DataProvider dataType="list-view" id="list-view_id_23"/>
+            </DataProviders>
+            <Presentation type="list"/>
+        </ViewDef>
+</Views>
+</Content>        
