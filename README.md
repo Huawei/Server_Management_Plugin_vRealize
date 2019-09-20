@@ -16,7 +16,7 @@ II. Description
 
 III.Supported software versions
 
-    vRealize Operations Manager 6.4/6.5/6.6/6.7 
+    vRealize Operations Manager 6.4/6.5/6.6/6.7/7.0 
        
 IV.Software Requirements
 
