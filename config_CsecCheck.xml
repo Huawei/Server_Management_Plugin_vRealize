@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modulelist>
+	<module name="huawei-vRealize-management-pack">
+		<filepath>/src/huawei-vRealize-management-pack</filepath>
+		<owner>qwx240210</owner>
+	</module>
+	<module name="huawei-vRealize-plugin">
+		<filepath>/src/huawei-vRealize-plugin</filepath>
+		<owner>qwx240210</owner>
+	</module>
+</modulelist>

@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<plugin>
+  <extension point="com.vmware.vide.init.newProjectDir">
+    <dir>config</dir>
+  </extension>
+  <extension point="com.vmware.vide.vlogbrowser.core.logx.dir">
+    <dir>logx</dir>
+  </extension>
+</plugin>

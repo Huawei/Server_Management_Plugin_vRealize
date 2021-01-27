@@ -2,7 +2,7 @@
 <solution>
 <managementPack>
 <name>HuaweieSightManagementPack</name>
-<version>1.2.3</version>
+<version>1.2.4</version>
 <minimumProductVersion>6.0.0</minimumProductVersion>
 <localizations lang="en">
 <localization lang="en">
