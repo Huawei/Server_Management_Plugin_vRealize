@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <adapter>
-  <version>1.2.3</version>
-  <minimumProductVersion>6.0.0</minimumProductVersion>
+  <version>2.0.1</version>
+  <minimumProductVersion>8.0.0</minimumProductVersion>
   <entryClass>com.huawei.adapter.ESightAdapter</entryClass>
   <adapterType>
     <key>ESightAdapter</key>
@@ -1031,6 +1031,11 @@
       </metrics>
     </genericObject>
     <genericObject>
+      <key>serverTypes</key>
+      <nameKey>65</nameKey>
+      <credential/>
+    </genericObject>
+    <genericObject>
       <key>hostInstance</key>
       <nameKey>55</nameKey>
       <credential/>
@@ -1677,11 +1682,6 @@
 </metric>
 </metrics>
 </groupObject>
-    <groupObject>
-      <key>serverTypes</key>
-      <nameKey>65</nameKey>
-      <credential/>
-    </groupObject>
     <groupObject>
       <key>mezzGroup</key>
       <nameKey>169</nameKey>

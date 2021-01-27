@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modules>     
+
+  <module name="vRealize-java" language="C#" fileexts="*.cs">   
+
+              <include path="src"/>
+
+              <base path=""/>
+
+           <exclude path=""/>
+
+  </module>
+  
+    <module name="vRealize-html" language="C#" fileexts="*.html">   
+
+              <include path="src"/>
+
+              <base path=""/>
+
+           <exclude path=""/>
+
+  </module>
+  
+    <module name="SvRealize-js" language="C#" fileexts="*.js">   
+
+              <include path="src"/>
+
+              <base path=""/>
+
+           <exclude path=""/>
+
+  </module>
+
+
+
+</modules>

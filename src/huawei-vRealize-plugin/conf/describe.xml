@@ -158,7 +158,7 @@
 <ResourceIdentifier dispOrder="1" enum="false" identType="1" key="id" nameKey="68" required="true" type="string"/>
 <ResourceAttribute dashboardOrder="1" dataType="string" defaultMonitored="true" key="healthState" nameKey="214" unit=""/>
 </ResourceKind>
-<ResourceKind credentialKind="" key="serverTypes" nameKey="65" showTag="false" type="8">
+<ResourceKind credentialKind="" key="serverTypes" nameKey="65" showTag="false" type="1">
 <ResourceIdentifier dispOrder="1" enum="false" identType="1" key="id" nameKey="76" required="true" type="string"/>
 <ResourceAttribute dashboardOrder="1" dataType="integer" defaultMonitored="true" key="healthState" nameKey="226" unit=""/>
 </ResourceKind>

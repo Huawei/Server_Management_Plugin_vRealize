@@ -1,71 +1,66 @@
+/*
+ * Copyright (c) Huawei Technologies Co., Ltd. 2020-2021. All rights reserved.
+ */
+
 package com.huawei.adapter.util;
 
-import com.fasterxml.jackson.core.JsonParseException;
-import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import org.springframework.lang.Nullable;
+
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 
 /**
  * 转义显示的工具类.
- * @author harbor
  *
+ * @author harbor
+ * @since 2017/9/22
  */
 public class ConvertUtils {
-    
     /**
      * 健康状态转换处理.
-     * 0 = OK
-     * 2,5 = Warning
-     * 3 = Immediate
-     * 4,6,7,8 = Critical
-     * -1,-2, 其他 = Unknown 
+     *
      * @param healthState 健康状态
      * @return 转换后的字符串
      */
     public static String convertHealthState(int healthState) {
-
-        switch(healthState){
-    	    case 0 : {
-               return "OK";
+        switch (healthState) {
+            case 0: {
+                return "OK";
             }
-    	    case 2:
-    	    case 5: {
-    	    	return "Warning";
-    	    }
-    	    case 3: {
-    	    	return "Immediate";
-    	    }
-    	    case 4:
+            case 2:
+            case 5: {
+                return "Warning";
+            }
+            case 3: {
+                return "Immediate";
+            }
+            case 4:
             case 6:
             case 7:
-    	    case 8:{
-    	    	return "Critical";
-    	    }
-    	    case -1:
-    	    case -2: {
+            case 8: {
+                return "Critical";
+            }
+            case -1:
+            case -2: {
                 return "Unknown";
             }
             default: {
                 return "Unknown";
             }
-    	}
+        }
     }
-    
-    
+
     /**
-     * @deprecated since 2018.06.26
      * RAID健康状态转换处理.
-     * 1 = normal
-     * 0 = offline
-     * -1 = unknown
-     * 其他 = error 
+     *
      * @param healthState 健康状态
-     * @return 转换后的字符串
+     * @return String 转换后的字符串
      */
     public static String convertHealthState4Raid(int healthState) {
         switch (healthState) {
-            case 1 : {
+            case 1: {
                 return "Normal";
             }
             case 0: {
@@ -77,40 +72,32 @@ public class ConvertUtils {
             default: {
                 return "Faulty";
             }
-            
-        } 
+        }
     }
-    
+
     /**
      * 转换在位状态.
+     *
      * @param presentState 在位状态
-     * @return 转换后的字符串
+     * @return String 转换后的字符串
      */
     public static String convertPresentState(int presentState) {
-        
-    	if (presentState == 0) {
-
+        if (presentState == 0) {
             return "Not detected";
-
-        } else if (presentState == 1){
-
+        } else if (presentState == 1) {
             return "Detected";
-
         } else {
-
             return "Unknown";
-
         }
-        
     }
-    
+
     /**
      * 转换输入电源模式.
+     *
      * @param inputMode 输入电源模式
-     * @return 转换后的字符串
+     * @return String 转换后的字符串
      */
     public static String convertInputMode(int inputMode) {
-        
         if (inputMode == 1) {
             return "AC";
         } else if (inputMode == 2) {
@@ -120,16 +107,15 @@ public class ConvertUtils {
         } else {
             return "";
         }
-        
     }
-    
+
     /**
      * 转换电源协议.
+     *
      * @param powerProtocol 电源协议
-     * @return 转换后的字符串
+     * @return String 转换后的字符串
      */
     public static String convertPowerProtocol(String powerProtocol) {
-        
         if ("0".equals(powerProtocol)) {
             return "PSMI";
         } else if ("1".equals(powerProtocol)) {
@@ -137,16 +123,15 @@ public class ConvertUtils {
         } else {
             return "";
         }
-        
     }
-    
+
     /**
      * 转换风扇控制模式.
+     *
      * @param controlModel 风扇控制模式
-     * @return 转换后的字符串
+     * @return String 转换后的字符串
      */
     public static String convertControlModel(int controlModel) {
-        
         if (controlModel == 0) {
             return "Automatic";
         } else if (controlModel == 1) {
@@ -154,42 +139,32 @@ public class ConvertUtils {
         } else {
             return "";
         }
-        
     }
-    
+
     /**
      * 转换风扇转百分比.
+     *
+     * @param controlModel  控制模式
      * @param rotatePercent 风扇转百分比
-     * @return 转换后的字符串
+     * @return String 转换后的字符串
      */
     public static String convertRotatePercent(int controlModel, int rotatePercent) {
-        
-    	/**
-        if (rotatePercent == 255) {
-            return "Automatic";
-        } else if (rotatePercent >= 0 && rotatePercent <= 100) {
-            return "" + rotatePercent;
-        } else {
-            return "--";
-        }
-        */
-        if(controlModel == 0 || rotatePercent == 255){
+        if (controlModel == 0 || rotatePercent == 255) {
             return "--";
         } else if (rotatePercent >= 0 && rotatePercent <= 100) {
             return "" + rotatePercent;
         } else {
             return "--";
         }
-        
     }
-    
+
     /**
      * 转换主板类型.
+     *
      * @param boardType 主板类型
-     * @return 转换后的字符串
+     * @return String 转换后的字符串
      */
     public static String convertBoardType(int boardType) {
-        
         if (boardType == 0) {
             return "Mainboard";
         } else if (boardType == 1) {
@@ -197,13 +172,13 @@ public class ConvertUtils {
         } else {
             return "";
         }
-        
     }
-    
+
     /**
-     * 转换功率字符串(如750.0 W转换为750). 
+     * 转换功率字符串(如750.0 W转换为750).
+     *
      * @param source 源字符串
-     * @return 转换结果
+     * @return String 转换结果
      */
     public static String convertPower(String source) {
         if (source == null || source.isEmpty()) {
@@ -211,34 +186,31 @@ public class ConvertUtils {
         }
         return source.replaceAll("\\.[0]+\\s+[^0-9]+$", "");
     }
-    
+
     /**
-     * 
-     * @param <T> json字符转换为对象.
-     * @param jsonString son字符
+     * 返回所需类型的json串
+     *
+     * @param jsonString json字符
      * @param returnType 返回类型
+     * @param <T>        json字符转换为对象
      * @return 返回指定对象
      */
+    @Nullable
     public static <T> T json2Object(String jsonString, Class<T> returnType) {
-        
         if (jsonString == null || jsonString.isEmpty()) {
             return null;
         }
-        
         ObjectMapper objectMapper = new ObjectMapper();
         try {
-            return objectMapper.readValue(jsonString.getBytes("UTF-8"), returnType);
-        } catch (JsonParseException e) {
-            return null;
-        } catch (JsonMappingException e) {
-            return null;
+            return objectMapper.readValue(jsonString.getBytes(StandardCharsets.UTF_8), returnType);
         } catch (IOException e) {
             return null;
         }
     }
-    
+
     /**
      * 转换RAID的interfaceType.
+     *
      * @param interfaceType 接口类型
      * @return 转换结果
      */
@@ -265,20 +237,20 @@ public class ConvertUtils {
             case "255": {
                 return "Unknown";
             }
-            default : {
+            default: {
                 return "Unknown";
             }
         }
     }
-    
+
     /**
      * check if resource offline.
+     *
      * @param presentState - online flag
      * @return check result
      */
-    public static boolean isOffline(int presentState){
+    public static boolean isOffline(int presentState) {
         return presentState == 0;
     }
-    
 }
 

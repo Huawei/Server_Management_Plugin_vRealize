@@ -2,8 +2,8 @@
 <solution>
 <managementPack>
 <name>HuaweieSightManagementPack</name>
-<version>1.2.3</version>
-<minimumProductVersion>6.0.0</minimumProductVersion>
+<version>2.0.1</version>
+<minimumProductVersion>8.0.0</minimumProductVersion>
 <localizations lang="en">
 <localization lang="en">
 <displayName>Huawei eSight Management Pack</displayName>
