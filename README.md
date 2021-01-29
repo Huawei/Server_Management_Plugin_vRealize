@@ -12,8 +12,9 @@ I. General Information
     
 II. Version notice
 
-    1. Upgraded open-source and third-party software versions.
-    2. Security rectification.
+    1. Interconnected with eSight v300R010C00SPC600.
+    2. Upgraded open-source and third-party software versions.
+    3. Security rectification.
 
 III. Introduction
 
