@@ -13,7 +13,7 @@ I. General Information
 II. Version notice
 
     1. Upgraded open-source and third-party software versions.
-    2. Security rectification
+    2. Security rectification.
 
 III. Introduction
 
