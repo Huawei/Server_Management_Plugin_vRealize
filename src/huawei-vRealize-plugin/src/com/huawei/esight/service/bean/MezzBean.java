@@ -4,6 +4,7 @@
 
 package com.huawei.esight.service.bean;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.huawei.adapter.util.ConvertUtils;
 
 import com.integrien.alive.common.adapter3.MetricData;
@@ -21,6 +22,7 @@ import java.util.Map;
  * @author harbor
  * @since 2017/9/22
  */
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class MezzBean implements TreeNodeResource {
     private String name;
 
