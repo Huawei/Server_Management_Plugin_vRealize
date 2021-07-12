@@ -8,7 +8,7 @@ I. General Information
 
     Name:     Huawei_eSight_For_vROps plugin
     Category: Monitoring 
-    version : 2.0.1
+    version : 2.0.2
     
 II. Function Description
     
@@ -21,7 +21,7 @@ II. Function Description
 III. Version notice
 
     1. Compatible with vRealize 8.0/8.1.
-    2. Interconnected with eSight v300R010C00SPC600.
+    2. Interconnected with eSight 20.1.0.
     3. Upgraded open-source and third-party software versions.
     4. Security rectification.
 
